@@ -27,7 +27,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap"></noscript>
 
 <script type="application/ld+json">
 {
@@ -90,7 +92,7 @@ header nav a:hover{color:#fff}
 .store-btn small{display:block;font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:#cfd8cf}
 .store-btn span{display:block;font-size:18px;font-weight:600}
 .hero-shot{width:min(300px,76%);max-height:62vh;object-fit:contain;justify-self:center;border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
-.hero-note{margin-top:14px;color:#bfd0c2;font-size:14px}
+.hero-note{margin-top:14px;color:var(--cream-dim);font-size:14px}
 
 .stats{background:var(--green-deep);color:var(--cream-dim)}
 .stats .wrap{display:flex;flex-wrap:wrap;gap:12px 48px;justify-content:center;padding-block:18px;font-size:15px}
@@ -187,7 +189,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:20px}
 <div class="top">
   <div class="wrap">
     <header>
-      <a class="brand" href="/"><img src="assets/hex-raven.png" alt="" width="44" height="44">Munin</a>
+      <a class="brand" href="/"><img src="assets/hex-raven-96.webp" alt="" width="44" height="44">Munin</a>
       <nav>
         <a href="#how">How it works</a>
         <a href="#topics">Topics</a>
@@ -211,7 +213,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:20px}
         </div>
         <p class="hero-note reveal" style="--d:.34s">Free, no ads. Unlimited is optional if you get hooked.</p>
       </div>
-      <img class="hero-shot" src="assets/shot-map.webp" alt="The Munin app showing a knowledge map of hexagonal topic tiles" width="720" height="1280" fetchpriority="high">
+      <img class="hero-shot" src="assets/shot-map-576.webp" alt="The Munin app showing a knowledge map of hexagonal topic tiles" width="576" height="1024" fetchpriority="high">
     </div>
   </div>
 </div>
@@ -226,6 +228,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:20px}
 </div>
 </div>
 
+<main>
 <section id="how">
   <div class="wrap">
     <h2 class="reveal">Learn it once. Keep it for good.</h2>
@@ -257,7 +260,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:20px}
         <h2>Type it, don't tap it.</h2>
         <p>Recognising the right option in a list is easy. Recalling it is what makes it stick. Munin asks you to type selected answers, and questions you already know well switch to typed recall in review. Small typos are forgiven and the official spelling is shown.</p>
       </div>
-      <img src="assets/shot-review.webp" alt="A Munin review session with a typed answer question" width="720" height="1280" loading="lazy">
+      <img src="assets/shot-review-576.webp" alt="A Munin review session with a typed answer question" width="576" height="1024" loading="lazy">
     </div>
   </div>
 </section>
@@ -317,7 +320,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:20px}
 
 <section class="story" id="why-munin">
   <div class="wrap">
-    <img src="assets/hex-raven.png" alt="The Munin raven on a gold-edged hex tile" width="170" height="170" loading="lazy">
+    <img src="assets/hex-raven-340.webp" alt="The Munin raven on a gold-edged hex tile" width="170" height="170" loading="lazy">
     <div>
       <h2 class="reveal">Why &ldquo;Munin&rdquo;?</h2>
       <p>In Norse mythology, Odin keeps two ravens: Huginn, thought, and Muninn, memory. Every morning Muninn flies out over the world and returns with what he has learned.</p>
@@ -342,6 +345,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:20px}
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap">
