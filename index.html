@@ -60,6 +60,7 @@
 }
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
 body{background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.6;font-size:17px}
 img{max-width:100%;height:auto;display:block}
 a{color:var(--green)}
@@ -117,7 +118,7 @@ header nav a:hover{color:#fff}
 .callout img{width:230px;border-radius:20px;box-shadow:0 16px 40px rgba(34,56,46,.18)}
 
 /* topic carousel: drag or swipe, with a gentle auto-drift */
-.car{overflow-x:auto;margin:34px -20px 28px;cursor:grab;user-select:none;
+.car{overflow-x:auto;margin:34px 0 28px;cursor:grab;user-select:none;
   scrollbar-width:none;-ms-overflow-style:none;
   -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
   mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
