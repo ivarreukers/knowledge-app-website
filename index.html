@@ -96,8 +96,9 @@ header nav a:hover{color:#fff}
 .hero-note{margin-top:14px;color:var(--cream-dim);font-size:14px}
 
 .stats{background:var(--green-deep);color:var(--cream-dim)}
-.stats .wrap{display:flex;flex-wrap:wrap;gap:12px 48px;justify-content:center;padding-block:18px;font-size:15px}
+.stats .wrap{display:grid;grid-template-columns:repeat(2,auto);justify-content:center;gap:10px 40px;padding-block:18px;font-size:15px}
 .stats b{color:var(--amber);font-weight:700;font-variant-numeric:tabular-nums}
+@media (min-width:600px){.stats .wrap{display:flex;flex-wrap:wrap;gap:12px 48px}}
 
 @media (min-width:861px){
   .fold{min-height:100svh}
@@ -221,9 +222,9 @@ footer nav{display:flex;flex-wrap:wrap;gap:20px}
 
 <div class="stats">
   <div class="wrap">
-    <div><b data-count="55">55</b> topics</div>
-    <div><b data-count="1500" data-suffix="+">1,500+</b> bite-size lessons</div>
-    <div><b data-count="3200" data-suffix="+">3,200+</b> quiz questions</div>
+    <div><b data-count="58">58</b> topics</div>
+    <div><b data-count="1550" data-suffix="+">1,550+</b> bite-size lessons</div>
+    <div><b data-count="3300" data-suffix="+">3,300+</b> quiz questions</div>
     <div><b>2 to 5</b> minutes per lesson</div>
   </div>
 </div>
